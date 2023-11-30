@@ -1,0 +1,117 @@
+.header-item {}
+
+.header-item__navbar-ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 2.3%;
+}
+
+.header-item__img {
+    position: absolute;
+    margin-top: 2.3%;
+    left: 40px;
+}
+
+.header-item__logo-img {
+    width: 200px;
+}
+
+
+.header-item__navbar-ul-items {
+    font-size: 0.85rem;
+    transform: scaleY(95%);
+    letter-spacing: 2px;
+    margin: 0 40px;
+    font-weight: 700;
+    line-height: 20px;
+    color: white;
+}
+
+.header-item__navbar-ul-link {
+    text-decoration: none;
+    color: white;
+}
+
+.header-items__center-wooder-items {
+    text-align: center;
+}
+
+.header-items__box-wooder {
+    position: relative;
+    margin-top: 16%;
+}
+
+.header-items__wooder {
+    position: relative;
+}
+
+.header-items__wooder-img {
+    margin: auto;
+}
+
+.btn-header {
+    position: relative;
+    transform: scaleY(95%);
+    margin-top: 4%;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 20px 35px;
+    background-color: transparent;
+    border: 1px solid;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+    direction: ltr;
+}
+
+.btn-header::after {
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: rgb(190, 166, 124);
+    animation-name: slideLeft;
+    animation-duration: .2s;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+}
+
+
+.btn-header:hover::after {
+    background-color: rgb(190, 166, 124);
+    animation-name: slideRight;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+.btn-header:hover {
+    /* background-color: rgb(190, 166, 124); */
+    color: rgb(65, 89, 131);
+}
+
+
+
+
+.header-item__nav {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.header-item {
+    background-image: url('/assets/img/slide1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 754px;
+    width: 100vw;
+}
+
+.header-items__wooder-img {
+    position: relative;
+}
